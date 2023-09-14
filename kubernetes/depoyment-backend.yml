@@ -21,4 +21,7 @@ spec:
             - containerPort: 8080
           env:
           - name: POSTGRES_HOST
-            value: "db"
+            valueFrom:
+              configMapKeyRef:
+                name: simple-configmap
+                key: POSTGRES_HOST
