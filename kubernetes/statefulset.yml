@@ -34,7 +34,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: simple-configmap
-              key: POSTGRES_HOST
+              key: POSTGRES_DB
 
         ports:
         - containerPort: 5432
